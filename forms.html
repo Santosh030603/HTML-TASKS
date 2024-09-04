@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form autocomplete="off">
+        <label for="email">Email</label>
+        <input type="email" placeholder="Enter your email!" id="email" required> <br> <br>
+        
+        <label for="password">Password</label>
+        <input type="Password" placeholder="Enter your password!" id="password" required> <br><br>
+
+        <label for="age">Age</label>
+        <input type="number" id="age" min="18" max="60"> <br> <br>
+
+        <label for="date">Date of Birth</label>
+        <input type="date" id="date"> <br> <br>
+
+        <label for="resume">Resume</label>
+        <input type="file" id="resume" accept=".pdf,.docx"> <br><br>
+
+        <input type="checkbox"><span>Terms & conditions</span> <br> <br>
+
+        <label for="asd">Gender : </label>
+        <input type="radio" id="asd" name="gender"><span>Male</span>
+        <input type="radio" id="asd" name="gender"><span>Female</span>
+        <input type="radio" id="asd" name="gender"><span>Others</span> <br><br>
+
+        <label for="username">Username : </label>
+        <input type="text" id="username"> <br> <br>
+
+        <select>
+            <option>Select</option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Others</option>
+        </select> <br> <br>
+
+        <select name="country">
+            <optgroup label="country">
+                <!-- <option>Select Country</option> -->
+                <option>India</option>
+                <option>Pakistan</option>
+                <option>Srilanka</option>
+            </optgroup> <br> <br>
+
+            <optgroup label="state">
+                <option>Select</option>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Others</option>
+            </optgroup> <br> <br>
+        </select>
+
+        <input type="text" list="contries">
+        <datalist id="contries">
+            <option>India</option>
+            <option>Pakistan</option>
+            <option>Srilanka</option>
+        </datalist> <br> <br>
+        <input type="submit">
+    </form>
+
+</body>
+</html>
